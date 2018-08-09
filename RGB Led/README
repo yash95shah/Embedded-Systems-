@@ -1,0 +1,21 @@
+********************************************************************************************************************************************************
+
+
+
+
+                                                          READ ME FILE
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+- Here we are supposed to use the digital gpio pins inside the Galileo Gen 2 board to blink the three leds namely Red, Green, Blue in a particular sequence (seven possible combinations)..
+ 
+-Firstly, we export each pin and initialize all the respective gpio pins in a function IOsetup() outside the main.
+
+-In the main program, we get the information about the percentage PWM and the pin numbers for Rled,GLed and BLed from the user respectively.
+
+-Accordingly, we export the value of the respective gpio pin.
+
+-We use a loop function and usleep function to set the respective on, off times of the LED sequences.
+ 
+-Lastly, we check for the mouse event. If a left or right click is detected, we terminate the program. For this we have assigned a variable named flag.
+

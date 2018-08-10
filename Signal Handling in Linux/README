@@ -1,0 +1,58 @@
+******************************************************************************************************************************************************************
+*****************************************************************************************************************************************************
+                                                                                                                      YASH G SHAH
+                                                                                                                      ASU ID 1213315179	
+*************************************************************************************************************************************************
+
+                               Assignment 4
+
+There are three tasks to be primarily performed.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 1:- 
+
+Navigate to the folder where the files are present.
+Type in the command gcc -o -wall Task1 Task1.c -pthread
+This will create executable file Task1.exe
+To run this file, you need to type 'sudo ./Task1 /dev/input/eventN' where the event N is the mouse event in your computer.
+
+
+------There are two threads created one is for the mouse function which detects a mouse double right click which will interrupt the second 		thread which is a calculation function and results in an imprecise computation. Because of the use of setjmp() and longjmp(), we are 		able to demonstrate this process. If a period of 10 secs has passed, it will result in final computation in the absence of a double 		mouse click.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Task 2:-
+
+Navigate to the folder where the files are present.
+There are three parts in Task2
+1) If the thread is runnable
+2)If thread is blocked by semaphore
+3) If thread is blocked by nanosleep()
+
+We create executable files one by one for each of these parts.
+
+For the first part, we set priority of one thread higher than the other. After the execution of the higher priority, signal handler will be called and only then the lower priority is executed.
+
+For the second part, after the semaphore is lifted, the thread executes.
+Third part uses nanosleep(), after which the signal handler is called and the thread executes.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Task 3:-
+
+There are two parts in Task3.
+We need to show that the signal is received by an arbitrary thread when a signal handler is called on multiple threads
+Navigate to the folder where the files are present.
+
+Create executable file by typing gcc -o Thread31 Thread31.c  -pthread
+
+
+
+
+
+
+
+
+
+

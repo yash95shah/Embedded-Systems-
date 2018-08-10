@@ -1,0 +1,26 @@
+******************************************TEAM 14 *********************************************************************************
+***********************************************************************************************************************************
+
+                                                                                                      Yash G Shah
+                                                                                                      1213315179
+                                                                                                      ygshah@asu.edu
+***********************************************************************************************************************************
+
+
+--- In the second part of the assignment, two drivers need to be created performing the same functions that were performed in the first
+    part of the assignment in the user space.
+
+--- The first driver is the ledspidev which deals with the display of LED and SPI. It will consist of the following functions namely init,
+    open, release, probe, write and ioctl (used to set the patterns in the device buffer).
+
+---The driver for the distance measurent has been called as usonicsensor which consists of the functions open, release, init, exit, write 
+   and read.We make use of the irq handler to detect the rising and falling edges and after that we make use of the rdtsc again and ultimately  
+   calculate pulse width.
+    
+---The main program (test program) prompts the user to choose the type of animation he wants. We have made various functions corresponding to
+   type of animation. The first animation is that of the dog which was already shown in the user level, the second would be the distance-number
+   in which the number counter increases/decreases (0 to 99) depending on the distance, the third just normal distance sensing and the last would be a 
+   user designed function to display the word 'INNOVATION'.
+
+-- To execute these functionalities, first go to the directory and type in the linux terminal 'make all' to generate the kobject files. Run the
+   test program. Select what type of animation you want.

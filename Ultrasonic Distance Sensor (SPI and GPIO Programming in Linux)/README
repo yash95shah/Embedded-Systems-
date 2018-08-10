@@ -1,0 +1,30 @@
+*********************************************************README**********************************************************************************
+                                                                                                                  YASH SHAH
+                                                                                                               CSE  438 Team 14
+                                                                                                                  1213315179
+                                                                                                              ygshah@asu.edu
+
+
+****************************************************************************************************************************************                                                                                                             
+
+                                    DETAILS:
+
+-  Open the directory in which the respective .c file is present and compile the code using gcc -o -wall main main.c -lpthread.
+
+-As we have from the hardware point of view, IO3 and IO2 are connected to the echo and trigger pins of the digital IO connector of the Galileo Gen 2 board respectively. The IO12 is the ChipSelect(CS), IO11 being the 
+
+-  The main program is a user space program to implement the two functions one being of the distance sensing and measurement and the other one being displaying an animation on the LED 8x8 matrix.
+
+- For the same, we have created two threads separated by mutexed to keep the thread safety in check.
+
+- The first thread would involve the LED matrix function (thread_transmit_spi) to display respective patterns based of at LED_transfer function which incorporates the IOCTL to send the various values into the LED. Here, we are basically checking the functionalities of spidev 1.0 device which is already present in the system.
+
+-The animation consists of a dog who is stationary in static conditions and its speed increases in the right direction based upon the object coming closer to the sensor and to the left the speed decreases if the object goes away from the sensor.
+
+******************************************************************************************************************************************
+                             
+
+
+
+
+
